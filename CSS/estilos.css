@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: 'Carter One', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #3c1c92, #e2851a); /* Gradient background with purple and dark green */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #8d33b1; /* Pinkish color for the heading */
+}
+
+main {
+    width: 60%;
+    padding: 20px;
+    /*background: rgba(255, 255, 255, 0.9);*/
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#imagen {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#palabra_a_adivinar {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* Purple color for the word to guess */
+    padding: 10px;
+    border: transparent; /* Border color */
+    border-radius: 5px;
+}
+
+button#jugar {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border: 2px solid #ffffff; /* Border */
+    background-color: #673ab7; /* Purple background */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#jugar:hover {
+    background-color: #512da8; /* Darker purple on hover */
+}
+
+#letras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Para las letras en la pantalla*/
+.letra {
+    width: 40px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #9c27b0; /* Purple color for letters */
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#letras .letra:hover {
+    background-color: #f5f5f5; /* Lighter purple on hover */
+}
+
+#letras-incorrectas {
+    display: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
+    color: #9c27b0; /* Color rojo para las letras incorrectas */
+  
+}
+
+h2 {
+    margin: 400;
+    font-size: 2em;
+    color: #b77fd8; /* Pinkish color for the heading */
+    
+}
+
+label {
+    font-size: 1.2em;
+    color: #9c27b0; /* Purple color for labels */
+    
+}
+
+#adivinarPalabra {
+    font-size: 1.2em;
+    padding: 8px;
+    border: 2px solid #ffffff; /* Border color */
+    background-color: transparent; /* cuadrado debajo de adivinar palabra */
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+#adivinar {
+    font-size: 1.2em;
+    padding: 9px 20px;
+    border: 2px solid #ffffff; /* Border color */
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #673ab7; /* Purple background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adivinar:hover {
+    background-color: #512da8; /* Darker purple on hover */
+}
+
+/* Estilo para los botones */
+button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #673ab7;
+    color: white;
+    border: 2px solid #ffffff; /* Border color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Estilo para los botones al pasar el cursor sobre ellos */
+button:hover {
+    background-color: #512da8;
+}
+
+/* Estilo para los botones dentro de un enlace */
+a button {
+    text-decoration: none;
+}
+
+/* Estilo para los botones dentro de un enlace al pasar el cursor sobre ellos */
+a button:hover {
+    background-color: #358934;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los botones a la izquierda dentro del contenedor */
+    justify-content: flex; /* Alinea los botones hacia la parte derecha del contenedor */
+    text-align: center; /* Alinea el texto horizontalmente en el centro */
+    padding-top: 30px; /* Ajusta el espacio en la parte superior para centrar verticalmente */
+}
+
+h1 {
+    text-shadow:
+    -1px -1px 1px #000000,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+    font-size: 50px; /* Establece el tamaño de la fuente, por ejemplo, 36 píxeles */
+    margin-bottom: 10px;
+    line-height: 3; /* Ajusta este valor según sea necesario para centrar verticalmente solo las letras */
+}
+
+h3 {
+    margin: 0;
+    font-size: 2em;
+    color: #ffffff; /* Pinkish color for the heading */
+}
+
+h3 {
+    text-shadow:
+    -1px -1px 1px #000000,
+    0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7),
+    0px 0px 7px rgba(0, 0, 0, 0.4);
+  font-size: 30px; /* Establece el tamaño de la fuente, por ejemplo, 36 píxeles */
+  margin-bottom: 10px;
+  line-height: 1.5; /* Ajusta este valor según sea necesario para centrar verticalmente solo las letras */
+}
+
+div {
+  margin-bottom: 20px; /* Espaciado entre los botones */
+}
+
+button {
+ 
+  padding: 10px 25px; /* centrar letras */
+  font-size: 16px;
+ 
+}
+
+.botonCategoria {
+    display: center;
+    flex-direction: column;
+    align-items: center; /* Alinea el texto dentro del botón a la derecha */
+    justify-content: center; /* Alinea el botón hacia la parte derecha */
+    text-align: center;
+    width: 105px; /* Ajusta el ancho del botón según sea necesario */
+    height: 40px; /* Ajusta la altura del botón según sea necesario */
+    margin: 10px; /* Espaciado entre los botones */
+    margin-top: 10px; /* Espaciado en la parte superior de cada botón */
+    margin-bottom: 10px; /* Espaciado en la parte inferior de cada botón */
+  }
+  #botonAnimales {
+    margin-right: auto; /* Mueve este botón a la extrema derecha */
+  }
+  
+  #botonFrutas {
+    margin-left: 0; /* Mueve este botón a la posición más a la izquierda posible */
+  }
+  
+  #botonColor {
+    margin-right: 0; /* Mueve este botón a la extrema derecha */
+  }
+  
+  #botonCiudad {
+    margin-left: auto; /* Mueve este botón a la extrema izquierda */
+  }
